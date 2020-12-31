@@ -15,7 +15,7 @@ protected:
 
 private:
     double distance_to_origin;
-    vector<Train> default_rail;
+    vector<Train> default_rail; //Train e' un placeholder
     string station_name;
     vector<Train> parking_lot;
 

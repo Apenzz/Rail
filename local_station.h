@@ -1,4 +1,4 @@
-#include "station.h"
+#include "Station.h"
 #include <vector>
 #include <string>
 
@@ -10,6 +10,6 @@ class Local_station : public Station
 public:
 private:
     const string station_type = "locale";
-    vector<Train> transit_rail;
+    vector<Train> transit_rail; //Train e' un placeholder
     //TODO
 };
