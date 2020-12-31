@@ -1,6 +1,15 @@
 #include "station.h"
+#include <vector>
+#include <string>
 
-class local_station : public station
+using std::string;
+using std::vector;
+
+class Local_station : public Station
 {
+public:
+private:
+    const string station_type = "locale";
+    vector<Train> transit_rail;
     //TODO
 };

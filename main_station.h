@@ -1,6 +1,13 @@
 #include "station.h"
+#include <string>
 
-class main_station : public station
+using std::string;
+using std::vector;
+
+class main_station : public Station
 {
+private:
+    const string station_type = "principale";
+
     //TODO
 };
