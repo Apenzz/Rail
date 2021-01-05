@@ -5,15 +5,13 @@
 #include <vector>
 #include <string>
 
-using std::string;
-using std::vector;
-
-class Local_station : public Station
+class Local_station : public Main_station
 {
 public:
+    Local_station(double distance_origin, const std::string &name);
+
 private:
-    const string station_type = "locale";
-    vector<Train> transit_rail; //Train e' un placeholder
+    std::vector<bool> transit_tracks;
     //TODO
 };
 
