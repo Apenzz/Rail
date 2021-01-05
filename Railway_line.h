@@ -1,3 +1,6 @@
+#ifndef RAILWAY_LINE_H
+#define RAILWAY_LINE_H
+
 #include <string>
 #include <iostream>
 #include <list>
@@ -13,3 +16,5 @@ private:
 public:
     Railway_line() {}
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef STATION_H
+#define STATION_H
+
 #include <vector>
 #include <string>
 
@@ -21,3 +24,5 @@ private:
 
     //TODO
 };
+
+#endif

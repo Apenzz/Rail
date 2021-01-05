@@ -1,3 +1,6 @@
+#ifndef MAIN_STATION_H
+#define MAIN_STATION_H
+
 #include "station.h"
 #include <string>
 
@@ -11,3 +14,5 @@ private:
 
     //TODO
 };
+
+#endif

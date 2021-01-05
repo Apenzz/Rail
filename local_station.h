@@ -1,3 +1,6 @@
+#ifndef LOCAL_STATION_H
+#define LOCAL_STATION_H
+
 #include "Station.h"
 #include <vector>
 #include <string>
@@ -13,3 +16,5 @@ private:
     vector<Train> transit_rail; //Train e' un placeholder
     //TODO
 };
+
+#endif
