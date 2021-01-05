@@ -9,21 +9,23 @@ using std::vector;
 class Station
 {
 public:
-    Station(const Station &) = delete;
-    Station &operator=(const Station &) = delete;
+    //Station(const Station &) = delete;
+    //Station &operator=(const Station &) = delete;
     virtual ~Station() {}
+    virtual bool has_space();
+    virtual double get_distance() const;
+    virtual std::string get_name() const;
+    virtual std::string get_type() const;
 
 protected:
-    Station(double distance_origin, const std::string &name)
-        : distance_to_origin{distance_origin}, station_name{name} {}
-
-    inline virtual bool is_terminus();
+    Station(double distance_origin, const std::string &name, const std::string &type);
 
 private:
     double distance_to_origin;
     std::string station_name;
+    const std::string type;
+    int free_tracks;
     vector<int> parking_lot; //int e' un placeholder
-    bool terminus;
     //const Station *prev;
     //const Station *next;
 

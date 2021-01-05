@@ -5,13 +5,13 @@
 #include <vector>
 #include <string>
 
-class Local_station : public Main_station
+class Local_station : public Station
 {
 public:
     Local_station(double distance_origin, const std::string &name);
 
 private:
-    std::vector<bool> transit_tracks;
+    int transit_tracks;
     //TODO
 };
 
