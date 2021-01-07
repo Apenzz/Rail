@@ -1,7 +1,7 @@
 #ifndef MAIN_STATION_H
 #define MAIN_STATION_H
 
-#include "station.h"
+#include "Station.h"
 #include <string>
 #include <vector>
 
