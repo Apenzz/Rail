@@ -1,0 +1,8 @@
+Padova
+Milano marittima xxx 1 500
+firenze centrale 0 600
+bologna 1 400
+pisa 1 450
+rovigo 1 425
+treviso 1 550
+boh 0 200
