@@ -26,9 +26,9 @@ std::list<Station*> stations_input()
 			{
 				if (std::stringstream(word) >> type)						//sfrutto stringstream per verificare se siamo arrivati al campo indicante la tipologia di stazione (0/1)
 				{
-					ss >> distance;											//se entra memorizza la distanza
-					
-					insert_in_order(railway, name, type, distance);			//ed inizializza un nuovo nodo della lista nella giusta posizione con i dati ricavati
+					ss >> distance;											//se entra memorizza la distanza 
+																			//siamo arrivati a fine riga quindi:
+					insert_in_order(railway, name, type, distance);			//inizializza un nuovo nodo della lista nella giusta posizione con i dati ricavati
 				}
 				else
 				{
