@@ -12,7 +12,6 @@ class Main_station : public Station
 private:
     const std::string station_type = "principale";
     int free_tracks; //[0,4] se 0 allora stazione piena
-    //std::vector<bool> passenger_tracks;
 
 public:
     Main_station(int distance_origin, const std::string &name);

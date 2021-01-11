@@ -4,7 +4,7 @@
 #define SIMULATION_H
 
 #include "Event.h"
-#include "eventComparatorCriterial.h" //da definire in un altro file
+#include "eventComparatorCriterial.h"
 #include <queue>
 #include <vector>
 

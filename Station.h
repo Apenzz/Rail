@@ -13,8 +13,6 @@ using std::vector;
 class Station
 {
 public:
-    //Station(const Station &) = delete;
-    //Station &operator=(const Station &) = delete;
     virtual ~Station() {}
     virtual bool has_space();
     virtual int get_distance() const;
@@ -34,7 +32,7 @@ private:
     std::string station_name;
     const std::string type;
     int free_tracks;
-    std::queue<Treno> parking_lot; //int e' un placeholder
+    std::queue<Treno> parking_lot;
 };
 
 #endif

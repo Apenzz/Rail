@@ -14,7 +14,6 @@ public:
 
 private:
     int transit_tracks;
-    //TODO
 };
 
 #endif

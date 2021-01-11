@@ -22,7 +22,6 @@ void Arriving_event::do_event()
         else
         {
             tr.getNext().add_to_parking(tr);
-            //railway_sim.schedule_event(new park_train_event(/*parametri per l'evento parcheggio treno*/));
         }
     }
     else
