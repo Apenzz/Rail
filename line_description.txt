@@ -1,11 +1,6 @@
-Padova
-Milano marittima xxx 1 500
-firenze centrale 0 600
-bologna 1 400
-pisa 1 450
-rovigo 1 425
-treviso 1 550
-boh 0 200
-giavera del montello 1 220
-
-
+Venezia
+Montebelluna 1 50
+Treviso centrale 0 70
+Belluno 1 120
+Vienna 0 500
+Monaco di Baviera 0 800
