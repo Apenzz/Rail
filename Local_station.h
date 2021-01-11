@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #ifndef LOCAL_STATION_H
 #define LOCAL_STATION_H
 
@@ -12,7 +14,6 @@ public:
 
 private:
     int transit_tracks;
-    //TODO
 };
 
 #endif

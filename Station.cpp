@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #include "Treno.h"
 #include "Station.h"
 #include <iostream>
