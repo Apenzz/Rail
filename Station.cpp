@@ -50,3 +50,8 @@ Treno &Station::remove_from_parking()
     parking_lot.pop();
     return tr;
 }
+
+bool Station::is_parking_empty()
+{
+    return parking_lot.empty();
+}

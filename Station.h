@@ -22,6 +22,7 @@ public:
     virtual void remove_train(const Treno &tr);
     virtual void add_to_parking(const Treno &tr);
     virtual Treno &remove_from_parking();
+    virtual bool is_parking_empty();
 
 protected:
     Station(int distance_origin, const std::string &name, const std::string &type);
