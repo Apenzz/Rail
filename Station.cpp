@@ -3,12 +3,12 @@
 
 using namespace std;
 
-Station::Station(double distance_origin, const std::string &name, const std::string &t)
+Station::Station(int distance_origin, const std::string &name, const std::string &t)
     : distance_to_origin{distance_origin}, station_name{name}, type{t}
 {
 }
 
-double Station::get_distance() const
+int Station::get_distance() const
 {
     return distance_to_origin;
 }
