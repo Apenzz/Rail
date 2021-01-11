@@ -13,7 +13,7 @@ private:
     //std::vector<bool> passenger_tracks;
 
 public:
-    Main_station(double distance_origin, const std::string &name);
+    Main_station(int distance_origin, const std::string &name);
 
     virtual std::string get_type();
 

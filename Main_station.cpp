@@ -4,7 +4,7 @@
 
 using std::string;
 
-Main_station::Main_station(double distance_origin, const std::string &name)
+Main_station::Main_station(int distance_origin, const std::string &name)
     : Station(distance_origin, name, "principale"), free_tracks{4}
 {
 }

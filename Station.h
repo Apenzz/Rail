@@ -13,15 +13,15 @@ public:
     //Station &operator=(const Station &) = delete;
     virtual ~Station() {}
     virtual bool has_space();
-    virtual double get_distance() const;
+    virtual int get_distance() const;
     virtual std::string get_name() const;
     virtual std::string get_type() const;
 
 protected:
-    Station(double distance_origin, const std::string &name, const std::string &type);
+    Station(int distance_origin, const std::string &name, const std::string &type);
 
 private:
-    double distance_to_origin;
+    int distance_to_origin;
     std::string station_name;
     const std::string type;
     int free_tracks;

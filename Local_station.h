@@ -8,7 +8,7 @@
 class Local_station : public Station
 {
 public:
-    Local_station(double distance_origin, const std::string &name);
+    Local_station(int distance_origin, const std::string &name);
 
 private:
     int transit_tracks;
