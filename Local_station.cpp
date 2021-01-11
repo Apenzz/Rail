@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #include <iostream>
 #include "Local_station.h"
 

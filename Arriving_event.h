@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #ifndef ARRIVING_EVENT_H
 #define ARRIVING_EVENT_H
 

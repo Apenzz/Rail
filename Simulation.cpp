@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #include "Simulation.h"
 
 Simulation::Simulation()

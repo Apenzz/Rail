@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #ifndef LOCAL_STATION_H
 #define LOCAL_STATION_H
 

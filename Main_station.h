@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #ifndef MAIN_STATION_H
 #define MAIN_STATION_H
 

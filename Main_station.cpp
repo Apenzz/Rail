@@ -1,3 +1,5 @@
+//AUTORE: Alberto Penzo
+
 #include <iostream>
 #include <string>
 #include "Main_station.h"
