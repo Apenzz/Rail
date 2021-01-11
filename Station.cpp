@@ -4,7 +4,7 @@
 using namespace std;
 
 Station::Station(int distance_origin, const std::string &name, const std::string &t)
-    : distance_to_origin{distance_origin}, station_name{name}, type{t}
+    : distance_to_origin{distance_origin}, station_name{name}, type{t}, free_tracks{4}
 {
 }
 
