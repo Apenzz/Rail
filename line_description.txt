@@ -1,0 +1,4 @@
+Venezia Galzignano Terme 
+Palermo Capo D'Orlando 0 150
+Napoli Nocera Inferiore 1 30
+Crotone Lamezia Terme 0 200
