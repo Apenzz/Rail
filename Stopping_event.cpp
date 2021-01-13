@@ -1,23 +1,27 @@
+//AUTORE: Alessio Gottardo
+
 #include "Stopping_event.h"
 
-
-Stopping_event::Stopping_event(Simulation* sim, int time, const Train& treno)
+Stopping_event::Stopping_event(Simulation* sim, int time, const Treno& treno)
 	: Event{ time }, railway_simulation{ sim }, tr{ treno }	{}
 
 
 void Stopping_event::do_event()
 {
+	tr.Incremento();
+	std::cout << "AVVISO: il treno " << tr.getCodice() << " è arrivato a " << tr.getCurrent()->get_name() << " alle ore: " << time << std::endl;
+
 	int stopping_time = 5;					//tempo salita/discesa passeggeri
-	int time_diff = (tr.timetable_time() - time);
+	tr.next_time();
+	int time_diff = (time - tr.timetable_time());
+	
 
-	if (time_diff < 0)					//se la differenza tra tempo previsto e tempo corrente è <0 siamo in ritardo
-	{
-		tr.add_ritardo(-(time_diff));
-	}
-	else if (time_diff > 5)					//se l'anticipo è <5 minuti viene consumato con la salita/discesa passeggeri
-	{
-		stopping_time = time_diff;			//se è >5min diventa il tempo di fermata in stazione
-	}
+	tr.add_ritardo(time_diff);
+	//std::cout << "COMUNICAZIONE: il ritardo del treno " << tr.getCodice() << " è aumentato di " << time_diff << " minuti in totale è " << tr.getRitardo() << std::endl;
+	
 
-	railway_simulation.schedule_event(new Starting_event(railway_simulation, time+stopping_time, tr));
+
+
+	//std::cout << "Stopping calc: " << time + stopping_time << std::endl;
+	railway_simulation->schedule_event(new Starting_event(railway_simulation, time+stopping_time, tr));				//prossimo evento: treno in partenza
 }

@@ -1,8 +1,9 @@
 //AUTORE: Alberto Penzo
 
-#include <iostream>
-#include <string>
 #include "Main_station.h"
+#include <string>
+#include <vector>
+#include <iostream>
 
 using std::string;
 

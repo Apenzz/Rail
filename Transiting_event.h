@@ -1,15 +1,21 @@
+//AUTORE: Alessio Gottardo
+
+#pragma once
 #include "Event.h"
 #include "Simulation.h"
-#include "Train.h"
+#include "Station.h"
+#include "Treno.h"
+#include "Starting_event.h"
+#include<iostream>
 
 class Transiting_event : public Event
 {
 public:
-	Transiting_event(Simulation* sim, int time, const Train& treno);
+	Transiting_event(Simulation* sim, int time, const Treno& treno);
 
 	virtual void do_event();
 
 private:
-	Train tr;
+	Treno tr;
 	Simulation* railway_simulation;
 };

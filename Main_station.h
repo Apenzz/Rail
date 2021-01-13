@@ -4,8 +4,6 @@
 #define MAIN_STATION_H
 
 #include "Station.h"
-#include <string>
-#include <vector>
 
 class Main_station : public Station
 {
@@ -18,7 +16,6 @@ public:
 
     virtual std::string get_type();
 
-    virtual bool has_space();
 };
 
 #endif

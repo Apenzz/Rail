@@ -4,8 +4,6 @@
 #define LOCAL_STATION_H
 
 #include "Station.h"
-#include <vector>
-#include <string>
 
 class Local_station : public Station
 {

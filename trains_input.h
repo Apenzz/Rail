@@ -1,5 +1,8 @@
-#include "Station.h"
-#include "railway_input.h"
-#include "Treno.h"
+//AUTORE: Alessio Gottardo
 
-vector<Treno> timetable_input(std::list<Station*>& railway);
+#pragma once
+#include "Station.h"
+#include "Treno.h"
+#include "railway_input.h"
+
+std::vector<Treno*> timetable_input(std::list<Station*> railway);

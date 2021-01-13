@@ -1,8 +1,6 @@
 //AUTORE: Alberto Penzo
 
-#include "Treno.h"
 #include "Station.h"
-#include <iostream>
 
 using namespace std;
 
@@ -31,12 +29,12 @@ bool Station::has_space()
     return free_tracks != 0;
 }
 
-void Station::add_train(const Treno &tr)
+void Station::add_train()
 {
     free_tracks -= 1;
 }
 
-void Station::remove_train(const Treno &tr)
+void Station::remove_train()
 {
     free_tracks += 1;
 }
