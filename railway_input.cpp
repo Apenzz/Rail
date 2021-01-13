@@ -1,3 +1,5 @@
+//AUTORE: Alessio Gottardo
+
 #include "railway_input.h"
 
 std::list<Station*> stations_input()

@@ -1,12 +1,15 @@
-#include<iostream>
-#include <fstream>
-#include<sstream>
-#include<vector>
-#include<string>
-#include <list>
-#include"Station.h"
+//AUTORE: Alessio Gottardo
+
+#pragma once
+#include "Station.h"
 #include "Main_station.h"
 #include "Local_station.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <string>
+#include <list>
 
 std::list<Station*> stations_input();					//funzione per inizializzare la linea ferroviaria ricevendo in input "line_description.txt"
 

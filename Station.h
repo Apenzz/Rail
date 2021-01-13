@@ -4,11 +4,10 @@
 #define STATION_H
 
 #include "Treno.h"
+#include <iostream>
 #include <vector>
 #include <string>
 #include <queue>
-
-using std::vector;
 
 class Station
 {
@@ -18,8 +17,8 @@ public:
     virtual int get_distance() const;
     virtual std::string get_name() const;
     virtual std::string get_type() const;
-    virtual void add_train(const Treno &tr);
-    virtual void remove_train(const Treno &tr);
+    virtual void add_train();
+    virtual void remove_train();
     virtual void add_to_parking(const Treno &tr);
     virtual Treno &remove_from_parking();
     virtual bool is_parking_empty();

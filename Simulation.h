@@ -7,6 +7,7 @@
 #include "eventComparatorCriterial.h"
 #include <queue>
 #include <vector>
+#include <memory>
 
 class Simulation
 {

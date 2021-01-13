@@ -13,7 +13,7 @@ public:
 
     virtual void do_event() = 0;
 
-    virtual double get_time() { return time; }
+    virtual double get_time() const { return time; }
 
 protected:
     double time;
